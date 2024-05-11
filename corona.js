@@ -6,11 +6,12 @@ const options = {
 		'X-RapidAPI-Host': 'corona-virus-world-and-india-data.p.rapidapi.com'
 	}
 };
-
+function check(){
 try {
-	const response = await fetch(url, options);
-	const result = await response.text();
+	const response = async-await fetch(url, options);
+	const result = async-await response.text();
 	console.log(result);
 } catch (error) {
 	console.error(error);
+}
 }
