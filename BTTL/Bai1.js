@@ -31,13 +31,20 @@ var product = [
     }
 ]
 
+// Cau a
+// var typeofProduct = prompt('SPLG')
+// var nameofProduct = prompt('TSPLG')
+// var price = prompt('GBN')
+//  product.push({
+//     'Loại': typeofProduct,
+//     'Tên' : nameofProduct,
+//     'Giá' :price,
+//  })
+//  console.log(product)
 
-var typeofProduct = prompt('SPLG')
-var nameofProduct = prompt('TSPLG')
-var price = prompt('GBN')
- product.push({
-    'Loại': typeofProduct,
-    'Tên' : nameofProduct,
-    'Giá' :price,
- })
- console.log(product)
+//Cau b
+for (let i=0; i<product.length; i++){
+    for (let j of product[i]){
+        console.log(product[i])
+    }
+}
