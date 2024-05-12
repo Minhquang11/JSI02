@@ -43,8 +43,13 @@ var product = [
 //  console.log(product)
 
 //Cau b
-for (let i=0; i<product.length; i++){
-    for (let j of product[i]){
-        console.log(product[i])
+function Showinfor() {
+    console.log('Danh sách sản phẩm là;')
+    for(let i=0; i<product.length; i++){
+        console.log('Tên sản phẩm thứ '+ (i+1)+ ': ' + product[i].Tên)
+        console.log('Giá: '+product[i].Giá)
+        console.log('Loại sản phẩm: '+ product[i].Loại)
+        console.log('')
     }
 }
+Showinfor()
