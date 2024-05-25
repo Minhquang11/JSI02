@@ -43,13 +43,24 @@ var product = [
 //  console.log(product)
 
 //Cau b
-function Showinfor() {
-    console.log('Danh sách sản phẩm là;')
-    for(let i=0; i<product.length; i++){
-        console.log('Tên sản phẩm thứ '+ (i+1)+ ': ' + product[i].Tên)
-        console.log('Giá: '+product[i].Giá)
-        console.log('Loại sản phẩm: '+ product[i].Loại)
-        console.log('')
-    }
-}
-Showinfor()
+// function Showinfor() {
+//     console.log('Danh sách sản phẩm là;')
+//     for(let i=0; i<product.length; i++){
+//         console.log('Tên sản phẩm thứ '+ (i+1)+ ': ' + product[i].Tên)
+//         console.log('Giá: '+product[i].Giá)
+//         console.log('Loại sản phẩm: '+ product[i].Loại)
+//         console.log('')
+//     }
+// }
+// Showinfor()
+
+//Cau c
+var typeofProduct = prompt('type?')
+var nameofProduct = prompt('TSPLG')
+var price = prompt('GBN')
+product.({
+    'Loại': typeofProduct,
+    'Tên' : nameofProduct,
+    'Giá' :price,
+})
+console.log(product)
