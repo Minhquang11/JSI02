@@ -3,11 +3,15 @@ login.addEventListener("submit", (e) => {
     e.preventDefault()
     let username = document.getElementById('username')
     let email = document.getElementById('email')
-    let pw = document.getElementById("password")
+    let pw = document.getElementById('password')
+
 
     let lowerCaseLetter = /[a-z]/g
     let upperCaseLetter = /[A-Z]/g
     let numbers = /[0-9]/g
+
+
+
 
     if (email.value.trim().length == 0 && pw.value.trim().length == 0) {
         alert("Please input your email & password")
@@ -44,7 +48,7 @@ login.addEventListener("submit", (e) => {
                 JSON.stringify(
                     [
                         {
-                            susername: username.value.trim(),
+                            username: username.value.trim(),
                             email: email.value.trim(),
                             pw: pw.value.trim()
                         }
